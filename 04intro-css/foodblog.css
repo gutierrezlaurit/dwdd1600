@@ -92,17 +92,17 @@ main dl {
 }
 
 main dl dt {
-    color: #592202;
+    color: #810202;
     font-weight: 400;
 }
 
 main dl dd {
-    color: #A67C58;
+    color: black;
     font-size: 1rem;
 }
 
 main ul {
-    list-style-type: none;
+    list-style-type: square;
 }
 
 main ul li {
@@ -127,7 +127,67 @@ main a {
 }
 
 main a:hover {
-    color: #BFAC95;
+    color: #5A00A1;
+
+}
+/* Contact Info Section */
+
+.contact-info {
+
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: #2E2E6F;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-weight: 400;
+    color: #333;
+    margin: 5px 0;
+    font-size: 1.4rem;
+}
+
+.contact-details a {
+    color: #810202;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: #5A00A1;;
+    text-decoration: none;
+}
+/* External Links Section */
+
+.external-links {
+    background-color: none;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.external-links h2 {
+    color: #2E2E6F;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.external-links a {
+    color: #810202;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.external-links a:hover {
+    color: #5A00A1;;
+    text-decoration: none;
 }
 
 /* Footer */
@@ -138,8 +198,6 @@ footer {
     padding: 1rem 0;
     font-size: 1rem;
     clear: both;
+    font-weight: 400;
 }
 
-footer a {
-    color: #260101;
-}
