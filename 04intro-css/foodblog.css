@@ -12,15 +12,17 @@ header {
     padding: 1.5rem 2vw;
     
 }
-header span{
-    font-size: 2.5rem;
-    font-weight: 700;
+header {
+    font-size: 1.5rem;
+    font-weight: 600;
     color: white;
 }
 
 header p{
-    font-size: 1.5rem;
+    font-size: 1.0;
     color: white;
+    font-weight: 400;
+    margin:0;
 }
 
 
