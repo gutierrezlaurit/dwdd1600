@@ -188,63 +188,67 @@ div.gallery figcaption {
     font-size: 1rem;
     color:#810202
 }
-/* Contact Info Section */
-
-.contact-info {
-
+/* Contact Info Section  */
+.contact-section {
     padding: 20px;
-    border-radius: 5px;
     margin: 20px 0;
     text-align: center;
 }
 
-.contact-info h2 {
+.contact-section h2 {
     color: #2E2E6F;
     font-size: 1.8rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.contact-details p {
+.contact-section address p {
     font-weight: 400;
     color: #333;
     margin: 5px 0;
     font-size: 1.4rem;
+    font-style: normal;
 }
 
-.contact-details a {
+.contact-section address a {
     color: #810202;
     font-weight: 400;
     text-decoration: none;
 }
 
-.contact-details a:hover {
-    color: #5A00A1;;
+.contact-section address a:hover {
+    color: #5A00A1;
     text-decoration: none;
 }
-/* External Links Section */
 
+/* External Links Section */
 .external-links {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
     text-align: center;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 .external-links h2 {
     color: #2E2E6F;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.external-links a {
+.external-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.external-links ul li a {
     color: #810202;
     font-weight: 400;
     text-decoration: none;
 }
 
-.external-links a:hover {
-    color: #5A00A1;;
+.external-links ul li a:hover {
+    color: #5A00A1;
     text-decoration: none;
 }
 
@@ -255,7 +259,8 @@ footer {
     color: #260101;
     padding: 1rem 0;
     font-size: 1rem;
-    clear: both;
     font-weight: 400;
+    clear: both;
 }
+
 
