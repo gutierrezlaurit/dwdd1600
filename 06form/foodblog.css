@@ -4,7 +4,7 @@ body {
     font-size: 22px;
     font-weight: 300;
     margin: 0;
-   
+    
 }
 
 
@@ -55,7 +55,7 @@ nav a:hover {
 /* Main Content */
 main {
     padding: 1rem 2vw;
-  
+    flex: 1;
 }
 
 main h1, main h2 {
