@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Food is Good: contact  </title>
+        <meta name="description" content="about">
+        <meta name="author" content="Laura Gutierrez Oliva">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="foodblog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Start of the page header-->
+        <header>
+
+            <div><h1>Contact us</h1></div>
+           
+        </header>
+        <!--Start of the page nav-->
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Start of the page main-->
+        <main>
+            <h1>Share Your Recipe</h1>
+            <form method="get" class="myform" action="thanks.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Cell Number* <input type="tel" name="phone" required placeholder="(000)000-0000"></label>
+                <label>Email* <input type="email" name="email" required></label>
+                
+            </fieldset>
+            <fieldset>   
+            <legend>Recipe Information</legend>
+            <label>Recipe Name* <input type="text" name="rname" required></label>
+            <label>Category
+                <select name="category" required>
+                    <option value="none"> Please Select</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch"> Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="appetizer">Appetizer</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+            </label>
+            <label>Ingredients:
+            <textarea name="ingredients" required></textarea>
+            </label>
+            <label>Instructions:
+            <textarea name="intructions" required></textarea>
+            </label>
+            <label>Difficulty:</label>
+            <label><input type="checkbox" name="easy" value="chosen">Easy</label>
+            <label><input type="checkbox" name="intermediate" value="chosen">Intermediate</label>
+            <label><input type="checkbox" name="advanced" value="chosen">Advanced</label>
+            <label>Additional Notes:
+            <textarea name="instructions"></textarea>
+            </label>
+            </fieldset>
+
+            <input type="submit" value="Send Your Recipe">
+            </form>
+
+
+            <div id="address"><p>You can reach as at:</p>
+            <address>
+                
+                Food is Good <br>
+                199 West 245 South <br>
+                Orem, UT 84058 <br>
+                 Phone# <a href="tel:801-555-5555">801-555-5555</a> <br>
+                 <a href="mailto:gutierrez.laurit@icloud.com">Email us</a> <br>
+                 Follow us on <a href="https://www.instagram.com/gutierrez.laurit/">instagram</a> <br>
+
+            </address>
+        </div>
+            </main>
+        <!--Start of the page footer-->
+        <footer>
+            <p>&copy; 2023 &bull; Laura Gutierrez Oliva &bull; <a href="mailto:gutierrez.laurit@icloud.com">Email us </a></p>
+        </footer>
+        
+    </body>
+</html>
