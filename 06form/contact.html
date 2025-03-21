@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Food is Good: contact  </title>
+        <title>Food is Good: Contact</title>
         <meta name="description" content="about">
         <meta name="author" content="Laura Gutierrez Oliva">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,9 +15,7 @@
     <body>
         <!--Start of the page header-->
         <header>
-
             <span>Contact us</span>
-           
         </header>
         <!--Start of the page nav-->
         <nav>
@@ -34,41 +32,49 @@
             <form method="get" class="myform" action="thanks.html">
                 <fieldset>
                     <legend>Customer Information</legend>
-                <label>First Name* <input type="text" name="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" required></label>
-                <label>Cell Number* <input type="tel" name="phone" required placeholder="(000)000-0000"></label>
-                <label>Email* <input type="email" name="email" required></label>
-                
-            </fieldset>
-            <fieldset>   
-            <legend>Recipe Information</legend>
-            <label>Recipe Name* <input type="text" name="rname" required></label>
-            <label>Category
-                <select name="category" required>
-                    <option value="none"> Please Select</option>
-                    <option value="breakfast">Breakfast</option>
-                    <option value="lunch"> Lunch</option>
-                    <option value="dinner">Dinner</option>
-                    <option value="appetizer">Appetizer</option>
-                    <option value="dessert">Dessert</option>
-                </select>
-            </label>
-            <label>Ingredients:
-            <textarea name="ingredients" required></textarea>
-            </label>
-            <label>Instructions:
-            <textarea name="intructions" required></textarea>
-            </label>
-            <label>Difficulty:</label>
-            <label><input type="checkbox" name="easy" value="chosen">Easy</label>
-            <label><input type="checkbox" name="intermediate" value="chosen">Intermediate</label>
-            <label><input type="checkbox" name="advanced" value="chosen">Advanced</label>
-            <label>Additional Notes:
-            <textarea name="instructions"></textarea>
-            </label>
-            </fieldset>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <label>Cell Number* <input type="tel" name="phone" required placeholder="(000)000-0000"></label>
+                    <label>Email* <input type="email" name="email" required></label>
+                    
+                    <!-- New Contact Preference Section -->
+                    <fieldset>
+                        <legend>Would you like to be contacted?</legend>
+                        <label><input type="radio" name="contact_preference" value="yes" required> Yes</label>
+                        <label><input type="radio" name="contact_preference" value="no"> No</label>
+                    </fieldset>
 
-            <input type="submit" value="Send Your Recipe">
+                </fieldset>
+
+                <fieldset>   
+                    <legend>Recipe Information</legend>
+                    <label>Recipe Name* <input type="text" name="rname" required></label>
+                    <label>Category
+                        <select name="category" required>
+                            <option value="none"> Please Select</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch"> Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="appetizer">Appetizer</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                    </label>
+                    <label>Ingredients:
+                        <textarea name="ingredients" required></textarea>
+                    </label>
+                    <label>Instructions:
+                        <textarea name="intructions" required></textarea>
+                    </label>
+                    <label>Difficulty:</label>
+                    <label><input type="checkbox" name="easy" value="chosen">Easy</label>
+                    <label><input type="checkbox" name="intermediate" value="chosen">Intermediate</label>
+                    <label><input type="checkbox" name="advanced" value="chosen">Advanced</label>
+                    <label>Additional Notes:
+                        <textarea name="instructions"></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Send Your Recipe">
             </form>
 
             <section class="contact-section">
@@ -78,19 +84,8 @@
                     <p>Call: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
                 </address>
             </section>
-            <!--<div id="address"><p>You can reach as at:</p>
-            <address>
-                
-                Food is Good <br>
-                199 West 245 South <br>
-                Orem, UT 84058 <br>
-                 Phone# <a href="tel:801-555-5555">801-555-5555</a> <br>
-                 <a href="mailto:gutierrez.laurit@icloud.com">Email us</a> <br>
-                 Follow us on <a href="https://www.instagram.com/gutierrez.laurit/">instagram</a> <br>
 
-            </address>-->
-        </div>
-            </main>
+        </main>
         <!--Start of the page footer-->
         <footer>
             <p>&copy; 2025 &bull; Laura Gutierrez Oliva &bull; Web Essentials</p>
