@@ -51,7 +51,7 @@ nav a {
 
 }
 nav .active a {
-    background-color:;
+    background-color: #8b5022;
     color: white;
     background-image: linear-gradient(to bottom, #8b5022, #653a19);
 
