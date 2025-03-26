@@ -144,7 +144,16 @@ figure.blogphoto figcaption {
   text-align: center;
   font-size: 0.7rem;
 }
+.recipehero {
+width: 100%;
+margin: 0;
 
+}
+.recipehero img {
+width: 100%;
+height: auto;
+border-radius: 5%;
+}
 /* Gallery - */
 div.gallery {
   display: flex;
@@ -323,12 +332,14 @@ header, nav, main, footer {
   main dl dd {
     text-align: center;
   }
+
 }
 
 /* ---------------------- Large Screens ---------------------- */
 @media only screen and (min-width: 601px) {
   nav {
     background-color: #B4BFB5;
+    
   }
 
   nav ul {
@@ -347,6 +358,7 @@ header, nav, main, footer {
     background-color: #808C80;
     color: #F2F2F2;
     background-image: linear-gradient(#808C80, #4f654f);
+    border-radius: 5%;
   }
 
   nav a:hover {
@@ -374,7 +386,16 @@ header, nav, main, footer {
     width: 20%;
     margin: 0.5rem 2% 0 0;
   }
-
+  .recipehero {
+    width: 100%;
+    margin: 0;
+    
+    }
+    .recipehero img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    }
 }
 
 
