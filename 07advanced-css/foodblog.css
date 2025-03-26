@@ -23,7 +23,7 @@ header span {
   padding-left: 3vw;
 }
 
-/* Navigation (Mobile First) */
+/* Navigation */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -49,7 +49,7 @@ nav a:hover {
   color: #5A00A1;
 }
 
-/* Main Content (Mobile First) */
+/* Main Content*/
 main {
   padding: 1rem 2vw;
   flex: 1;
@@ -121,7 +121,7 @@ main a:hover {
   color: #5A00A1;
 }
 
-/* Images - Mobile First */
+/* Images */
 figure.myphoto,
 figure.blogphoto {
   width: 50%;
@@ -145,7 +145,7 @@ figure.blogphoto figcaption {
   font-size: 0.7rem;
 }
 
-/* Gallery - Mobile First */
+/* Gallery - */
 div.gallery {
   display: flex;
   flex-wrap: wrap;
@@ -303,8 +303,12 @@ footer {
   font-weight: 400;
   clear: both;
 }
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
 
-/* ---------------------- Small Screen Text Centering ---------------------- */
+/* ---------------------- Small Screen Text  ---------------------- */
 @media only screen and (max-width: 600px) {
   main h1,
   main h2,
@@ -370,6 +374,7 @@ footer {
     width: 20%;
     margin: 0.5rem 2% 0 0;
   }
+
 }
 
 
