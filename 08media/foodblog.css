@@ -1,0 +1,403 @@
+/* General Styling */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #2B402C;
+  padding: 1.5rem 1vw;
+  display: flex;
+  align-items: center;
+}
+
+header span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  padding-left: 3vw;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: .8rem;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  color: #38383F;
+}
+
+nav li.active a {
+  background-color: #808C80;
+  color: #F2F2F2;
+  background-image: linear-gradient(#808C80, #4f654f);
+}
+
+nav a:hover {
+  color: #5A00A1;
+}
+
+/* Main Content*/
+main {
+  padding: 1rem 2vw;
+  flex: 1;
+}
+
+main h1, main h2 {
+  color: #2E2E6F;
+  padding: 10px;
+  margin: 0;
+}
+
+main h3 {
+  padding: 10px;
+}
+
+main p {
+  color: #2f3133;
+  margin: 10px;
+}
+
+main ol {
+  margin: 10px;
+  background-color: #F0F0F2;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main ol li {
+  margin-bottom: .5rem;
+}
+
+main dl {
+  padding: 10px;
+}
+
+main dl dt {
+  color: #810202;
+  font-weight: 400;
+}
+
+main dl dd {
+  color: black;
+  font-size: 1rem;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+main ul li {
+  line-height: 125%;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+main contact p {
+  font-style: italic;
+}
+
+main a {
+  color: #810202;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+main a:hover {
+  color: #5A00A1;
+}
+
+/* Images */
+figure.myphoto,
+figure.blogphoto {
+  width: 50%;
+  height: auto;
+  margin: 1rem auto;
+  float: none;
+  text-align: center;
+}
+
+figure.myphoto img,
+figure.blogphoto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  font-size: 1rem;
+}
+
+figure.myphoto figcaption,
+figure.blogphoto figcaption {
+  text-align: center;
+  font-size: 0.7rem;
+}
+.recipehero {
+width: 100%;
+margin: 0;
+
+}
+.recipehero img {
+width: 100%;
+height: auto;
+border-radius: 5%;
+}
+/* Gallery - */
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.gallery figure {
+  width: 48%;
+  margin: 1%;
+}
+
+div.gallery img {
+  border-radius: 5%;
+}
+
+div.gallery img:hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+div.gallery figcaption {
+  text-align: center;
+  font-size: 1rem;
+  color: #810202;
+}
+
+/* Contact Info Section */
+.contact-section {
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #2E2E6F;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-section address p {
+  font-weight: 400;
+  color: #333;
+  margin: 5px 0;
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
+.contact-section address a {
+  color: #810202;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contact-section address a:hover {
+  color: #5A00A1;
+  text-decoration: none;
+}
+
+/* External Links Section */
+.external-links {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.external-links h2 {
+  color: #2E2E6F;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.external-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.external-links ul li a {
+  color: #810202;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.external-links ul li a:hover {
+  color: #5A00A1;
+  text-decoration: none;
+}
+
+/* Form Styling */
+.myform fieldset {
+  border: 1px solid #810202;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.myform legend {
+  color: #810202;
+  font-size: 1rem;
+}
+
+.myform label,
+.myform select,
+.myform [type="text"],
+.myform [type="tel"],
+.myform textarea,
+.myform [type="email"] {
+  display: block;
+  margin: .5rem 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1rem;
+}
+
+.myform [type="text"],
+.myform [type="tel"],
+.myform select,
+.myform textarea,
+.myform [type="email"] {
+  border: solid 1px #888;
+  padding: .3rem;
+  width: 100%;
+  max-width: 250px;
+  border-radius: .3rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.myform textarea {
+  height: 6rem;
+}
+
+.myform :required {
+  background-color: #ecf4ec;
+}
+
+.myform [type="submit"] {
+  background-color: #5A00A1;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: block;
+  margin: 2rem auto 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #F0F0F2;
+  text-align: center;
+  color: #260101;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  clear: both;
+}
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+/* ---------------------- Small Screen Text  ---------------------- */
+@media only screen and (max-width: 600px) {
+  main h1,
+  main h2,
+  main h3,
+  main p,
+  main ol,
+  main ol li,
+  main ul,
+  main ul li,
+  main dl,
+  main dl dt,
+  main dl dd {
+    text-align: center;
+  }
+
+}
+
+/* ---------------------- Large Screens ---------------------- */
+@media only screen and (min-width: 601px) {
+  nav {
+    background-color: #B4BFB5;
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 2vw;
+    display: flex;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    padding: .82rem 2rem;
+  }
+
+  nav li.active a {
+    background-color: #808C80;
+    color: #F2F2F2;
+    background-image: linear-gradient(#808C80, #4f654f);
+    border-radius: 5%;
+  }
+
+  nav a:hover {
+    color: #5A00A1;
+  }
+
+  figure.myphoto,
+  figure.blogphoto {
+    width: 20%;
+    float: left;
+    margin: 0 2% 2% 0%;
+    text-align: center;
+  }
+
+  figure.myphoto figcaption,
+  figure.blogphoto figcaption {
+    font-size: 1rem;
+  }
+
+  div.gallery {
+    justify-content: flex-start;
+  }
+
+  div.gallery figure {
+    width: 20%;
+    margin: 0.5rem 2% 0 0;
+  }
+  .recipehero {
+    width: 100%;
+    margin: 0;
+    
+    }
+    .recipehero img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    }
+}
+
+
+
+
