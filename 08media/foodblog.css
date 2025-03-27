@@ -410,7 +410,7 @@ header, nav, main, footer {
   .recipehero img {
     width: 100%;
     height: auto;
-    border-radius: 2%;
+    border-radius: 1%;
   }
 
   table.our-activities {
@@ -445,6 +445,13 @@ header, nav, main, footer {
   .video {
     
     margin: 1rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }  
+  .location{
+    
+    margin: auto;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
