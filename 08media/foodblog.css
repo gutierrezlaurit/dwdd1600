@@ -144,40 +144,60 @@ figure.blogphoto figcaption {
   text-align: center;
   font-size: 0.7rem;
 }
-.recipehero {
-width: 100%;
-margin: 0;
 
+.recipehero {
+  width: 100%;
+  margin: 0;
 }
+
 .recipehero img {
-width: 100%;
-height: auto;
-border-radius: 5%;
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
 }
-/* Gallery - */
+
+/* Gallery - UPDATED */
 div.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 div.gallery figure {
-  width: 48%;
-  margin: 1%;
+  width: 22%;
+  height: 300px;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+div.gallery figure:hover {
+  transform: scale(1.02);
 }
 
 div.gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 70%;
   border-radius: 5%;
-}
-
-div.gallery img:hover {
-  box-shadow: 0px 0px 10px black;
 }
 
 div.gallery figcaption {
   text-align: center;
   font-size: 1rem;
   color: #810202;
+  padding-top: 0.5rem;
+  line-height: 1.2;
 }
 
 /* Contact Info Section */
@@ -312,9 +332,10 @@ footer {
   font-weight: 400;
   clear: both;
 }
+
 header, nav, main, footer {
-    max-width: 64rem;
-    margin: 0 auto;
+  max-width: 64rem;
+  margin: 0 auto;
 }
 
 /* ---------------------- Small Screen Text  ---------------------- */
@@ -333,13 +354,16 @@ header, nav, main, footer {
     text-align: center;
   }
 
+  div.gallery figure {
+    width: 48%;
+    height: 250px;
+  }
 }
 
 /* ---------------------- Large Screens ---------------------- */
 @media only screen and (min-width: 601px) {
   nav {
     background-color: #B4BFB5;
-    
   }
 
   nav ul {
@@ -378,25 +402,44 @@ header, nav, main, footer {
     font-size: 1rem;
   }
 
-  div.gallery {
-    justify-content: flex-start;
-  }
-
-  div.gallery figure {
-    width: 20%;
-    margin: 0.5rem 2% 0 0;
-  }
   .recipehero {
     width: 100%;
     margin: 0;
-    
-    }
-    .recipehero img {
+  }
+
+  .recipehero img {
     width: 100%;
     height: auto;
     border-radius: 2%;
-    }
+  }
+
+  table.our-activities {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+  }
+
+  table.our-activities th {
+    background-color: #5A00A1;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+  }
+
+  table.our-activities td {
+    color: #810202;
+    padding: .4rem 2vw;
+  }
+
+  table.our-activities tr:nth-child(odd) {
+    background-color: #f7f7f7;
+  }
+
+  table.our-activities tr:hover {
+    background-color: rgba(246, 220, 215, 0.2);
+  }
 }
+
 
 
 
