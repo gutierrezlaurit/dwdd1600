@@ -1,117 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DGBQ8D7VC9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DGBQ8D7VC9');
-</script>
     <meta charset="UTF-8">
-    <meta name="author" content="Laura Gutierrez Oliva">
-    <meta name="description" content="Laura Cooks - Sharing delicious recipes and cooking tips for food lovers.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="foodblog.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
-    <title>Laura Cooks</title>
-</head>
-<body>
-
-    <!-- Header Section -->
+    <title> Contact Us | Aloha Getaways</title>
+  </head>
+  <body>
     <header>
-        <img src="images/logo.png" alt="site logo" width="100" height="104">
-        <span>Laura Cooks</span>
-     </header>
-        <!--Start of the page nav-->
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <!--Start of the page main-->
+        <h1> Aloha Getaways</h1>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Discover the Magic of Hawaii</h2>
+      
+        <div class="video">
+          <iframe width="100%" height="450" src="https://www.youtube.com/embed/XDKUqQZVYUE" 
+            title="Top 10 Places to Visit in Hawaii" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      
         <main>
-            <figure class="recipehero">
-                <img src="images/heroimage.jpg" alt="Recipe Book" width="1024" height="1024">
-
-            </figure>
-            <h1>Share Your Recipe</h1>
-            <form method="get" class="myform" action="thanks.html">
-                <fieldset>
-                    <legend>Customer Information</legend>
-                    <label>First Name* <input type="text" name="fname" required></label>
-                    <label>Last Name* <input type="text" name="lname" required></label>
-                    <label>Cell Number* <input type="tel" name="phone" required placeholder="(000)000-0000"></label>
-                    <label>Email* <input type="email" name="email" required></label>
-                    
-                    <!-- New Contact Preference Section -->
-                    <fieldset>
-                        <legend>Would you like to be contacted?</legend>
-                        <label><input type="radio" name="contact_preference" value="yes" required> Yes</label>
-                        <label><input type="radio" name="contact_preference" value="no"> No</label>
-                    </fieldset>
-
-                </fieldset>
-
-                <fieldset>   
-                    <legend>Recipe Information</legend>
-                    <label>Recipe Name* <input type="text" name="rname" required></label>
-                    <label>Category
-                        <select name="category" required>
-                            <option value="none"> Please Select</option>
-                            <option value="breakfast">Breakfast</option>
-                            <option value="lunch"> Lunch</option>
-                            <option value="dinner">Dinner</option>
-                            <option value="appetizer">Appetizer</option>
-                            <option value="dessert">Dessert</option>
-                        </select>
-                    </label>
-                    <label>Ingredients:
-                        <textarea name="ingredients" required></textarea>
-                    </label>
-                    <label>Instructions:
-                        <textarea name="intructions" required></textarea>
-                    </label>
-                    <label>Difficulty:</label>
-                    <label><input type="checkbox" name="easy" value="chosen">Easy</label>
-                    <label><input type="checkbox" name="intermediate" value="chosen">Intermediate</label>
-                    <label><input type="checkbox" name="advanced" value="chosen">Advanced</label>
-                    <label>Additional Notes:
-                        <textarea name="instructions"></textarea>
-                    </label>
-                </fieldset>
-
-                <input type="submit" value="Send Your Recipe">
+            <h2>Request More Information</h2>
+            <form method="get" action="thanks.html" class="myform">
+              <fieldset>
+                <legend>Your Info</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Email* <input type="email" name="email" required></label>
+                <label>Phone <input type="tel" name="phone"></label>
+              </fieldset>
+          
+              <fieldset>
+                <legend>Travel Preferences</legend>
+                <label>Where do you want to go?
+                  <select name="destination" required>
+                    <option value="">Choose One</option>
+                    <option value="maui">Maui</option>
+                    <option value="kauai">Kauai</option>
+                    <option value="oahu">Oahu</option>
+                  </select>
+                </label>
+          
+                <p>Budget Range:</p>
+                <label><input type="radio" name="budget" value="low" required> Under $1000</label>
+                <label><input type="radio" name="budget" value="mid"> $1000–$1500</label>
+                <label><input type="radio" name="budget" value="high"> Over $1500</label>
+          
+                <label>Comments or Questions:
+                  <textarea name="comments"></textarea>
+                </label>
+              </fieldset>
+          
+              <input type="submit" value="Send Request">
             </form>
-
-            <section class="contact-section">
-                <h2>Get in Touch</h2>
-                <address>
-                    <p>Email: <a href="mailto:gutierrez.laurit@icloud.com">gutierrez.laurit@icloud.com</a></p>
-                    <p>Call: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                    
-                        199 West 255 South <br>
-                        Orem, UT 84058 <br>
-                    
-                </address>
-            
-            <h3> Location Map</h3>
-            <div class="location"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.253109428025!2d-111.70225422484775!3d40.2923386714599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9ac4ed52cae5%3A0xdefd63080ac48e09!2s199%20W%20255%20S%2C%20Orem%2C%20UT%2084058!5e0!3m2!1sen!2sus!4v1682144557287!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
-            </section>
-
-        </main>
-        <!--Start of the page footer-->
-        <footer>
-            <p>&copy; 2025 &bull; Laura Gutierrez Oliva &bull; Web Essentials</p>
-        </footer>
-    </body>
-</html>
+          </main>
+          
+      
+      <footer>
+        <p>&copy; 2025 Aloha Getaways • Designed by Laura Gutierrez Oliva</p>
+      </footer>
+      
+      
+      
+  </body>
+  </html>
