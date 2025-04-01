@@ -1,6 +1,6 @@
-/* Mobile base styles */
+
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Lexend Tera", sans-serif;;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -23,12 +23,14 @@ header img {
 }
 
 h1 {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Lexend Tera", sans-serif;;
   font-size: 1.8rem;
-  font-weight: 900;
+  font-weight: 600;
   margin: 0;
   background-color: #75c6e6;
   color: black;
+  text-align: left;
+  padding: 10px;
   
 }
 nav {
@@ -71,14 +73,14 @@ nav .active a {
 
 
 main h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
  margin: 1rem;
   color: black;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
 }
 main p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0 auto;
   padding: 0 1rem 0 1rem; 
   color: black;
@@ -105,16 +107,18 @@ figcaption {
   margin-top: 0.5rem;
   font-weight: 300;
   color: #012623;
-  font-size: 1rem;
+  font-size: .75rem;
   font-style: italic;
   
 }
 
 main h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
  margin:1rem;
   color: black;
   text-align: center;
+  font-weight: 500;
+
 }
 
 blockquote {
@@ -128,6 +132,7 @@ blockquote {
   color: black;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 10px;
+  font-size: .75rem;
 }
 div.gallery {
   display: flex;
@@ -166,7 +171,7 @@ div.gallery img {
 
 div.gallery figcaption {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #012623;
   padding-top: 0.5rem;
 
@@ -180,20 +185,24 @@ div.gallery figcaption {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+  transition: transform 0.2s ease;
 
+}
+.package:hover {
+  transform: scale(1.02);
+}
 .package-details {
   text-align: center;
 }
 
-.package-details h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
+.package h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
   margin: 0 0 0.75rem;
   color: #012623;
 }
 
-.package-details figure {
+.package-detail figure {
   margin: 0 auto 1rem;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
@@ -207,11 +216,11 @@ div.gallery figcaption {
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-.package-details figcaption {
+.package figcaption {
   margin-top: 0.5rem;
   font-style: italic;
-  font-size: 0.9rem;
-  color: #465902;
+  font-size: 1.2rem;
+  color: #0b534c;
   font-weight: 300;
 }
 
@@ -222,9 +231,9 @@ div.gallery figcaption {
   color: #333;
 }
 
-.package-details a {
-  color: #0460D9;
-  text-decoration: underline;
+.package  a {
+  color: #A60321;
+  text-decoration: none;
 }
 .video {
     
@@ -233,14 +242,15 @@ div.gallery figcaption {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }  
+
 .myform fieldset {
-  border: 1px solid #810202;
+  border: 1px solid #A60321;
   border-radius: 3px;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .myform legend {
-  color: #810202;
+  color: #A60321;
   font-size: 1rem;
 }
 
@@ -279,7 +289,7 @@ div.gallery figcaption {
 }
 
 .myform [type="submit"] {
-  background-color: #5A00A1;
+  background-color: #148C80;
   border: none;
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -288,14 +298,24 @@ div.gallery figcaption {
   font-family: 'Montserrat Alternates', sans-serif;
   display: block;
   margin: 2rem auto 0 auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
+
+.myform [type="submit"]:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 footer {
   background-color: #F2DFD8;
   color: black;
   text-align: center;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: .75rem;
   margin-top: 2rem;
+  font-weight: 300;
+  
 }
 
 
