@@ -18,11 +18,12 @@ header img {
   width: 60px;
   height: auto;
   background-color: #C2E9F2;
+  padding: 1rem;
 }
 
 h1 {
   font-family: 'Playwrite IT Moderna', serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background-color: #C2E9F2;
   padding-left: 1rem;
   font-weight: 700;
