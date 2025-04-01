@@ -11,22 +11,125 @@ body {
 header {
   display: flex;
   align-items: center;
-  background-color: #C2E9F2; 
+  background-color: #89CAD9; 
   
 }
 header img {
   width: 60px;
   height: auto;
-  background-color: #C2E9F2;
+  background-color: #89CAD9;
   padding: 1rem;
 }
 
 h1 {
-  font-family: 'Playwrite IT Moderna', serif;
-  font-size: 1.5rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0;
+  background-color: #89CAD9;
+  color: black;
+  
+}
+nav {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  list-style: none;
+}
+nav li {
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1.2rem;
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(#5A798C, #8295a1);
+  border-radius: 10px;
+  font-weight: 400;
+  transition: background 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+nav a:hover {
+  background-color: #add3e6;
+}
+
+nav .active a {
+  background-color: #5A798C;
+}
+main h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+}
+main p {
+  font-size: 1.3rem;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem; 
+  color: black;
+  text-align: center;
+  font-weight: 300;
+}
+figure {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+figure img {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+
+figcaption {
+  margin-top: 0.5rem;
+  font-weight: 300;
+  color: #465902;
+  font-style: italic;
+}
+
+main h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: black;
+  text-align: center;
+}
+
+blockquote {
+
+  font-style: italic;
   background-color: #C2E9F2;
-  padding-left: 1rem;
-  font-weight: 700;
+  border-left: 5px solid #5A798C;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 400px;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+footer {
+  background-color: #F2C4B3;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.7rem;
+  margin-top: 2rem;
 }
 
 
