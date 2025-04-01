@@ -1,4 +1,4 @@
-/* Mobile-first base styles */
+/* Mobile base styles */
 body {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
@@ -8,12 +8,31 @@ body {
   color: #333;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  background-color: #C2E9F2; 
+  
+}
+header img {
+  width: 60px;
+  height: auto;
+  background-color: #C2E9F2;
+}
+
 h1 {
   font-family: 'Playwrite IT Moderna', serif;
-  font-size: 2rem;
-  text-align: center;
-  margin: 1rem 0;
+  font-size: 1.8rem;
+  background-color: #C2E9F2;
+  padding-left: 1rem;
+  font-weight: 700;
 }
+
+
+  
+
+
+
 
 
 
