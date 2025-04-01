@@ -14,6 +14,7 @@ header {
   background-color: #75c6e6; 
   
   
+  
 }
 header img {
   width: 60px;
@@ -58,6 +59,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
 
 
@@ -305,8 +307,11 @@ div.gallery figcaption {
 .myform [type="submit"]:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
 }
-
+.myform {
+  padding-bottom: 2rem;
+}
 footer {
   background-color: #F2DFD8;
   color: black;
@@ -316,6 +321,85 @@ footer {
   margin-top: 2rem;
   font-weight: 300;
   
+}
+header, nav, main, footer {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+/* ========== Large Screen (Desktop) Styles ========== */
+@media only screen and (min-width: 601px) {
+  header {
+    justify-content: flex-start;
+    
+  }
+  header img {
+    width: 80px;
+    height: auto;
+    background-color: #75c6e6;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    
+    padding-left: 1.5rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#148C80, #0b534c);
+    
+    
+    
+  }
+  nav  {
+    padding: 0;
+  }
+
+  nav li {
+    margin-bottom: 0;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+  }
+  nav li.active a {
+    border-radius: 5%;
+  }
+  blockquote {
+
+    font-style: italic;
+    background-color: #C2E9F2;
+    border-left: 5px solid #96cfe6;
+    margin:3rem auto;
+    
+    max-width: 400px;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    font-size: .75rem;
+  }
+  div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  div.gallery figure {
+    width: 22%;
+  }
+  .package {
+    max-width: 60%;
+    margin: 2rem auto;
+  }
+
+  .myform {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 
