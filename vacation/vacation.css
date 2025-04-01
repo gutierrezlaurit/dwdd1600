@@ -5,19 +5,20 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
-  color: #333;
+  color: black;
 }
 
 header {
   display: flex;
   align-items: center;
-  background-color: #89CAD9; 
+  background-color: #7EA6BF; 
+  
   
 }
 header img {
   width: 60px;
   height: auto;
-  background-color: #89CAD9;
+  background-color: #7EA6BF;
   padding: 1rem;
 }
 
@@ -26,7 +27,7 @@ h1 {
   font-size: 1.8rem;
   font-weight: 900;
   margin: 0;
-  background-color: #89CAD9;
+  background-color: #7EA6BF;
   color: black;
   
 }
@@ -44,8 +45,8 @@ nav a {
   display: block;
   padding: 0.75rem 1.2rem;
   text-decoration: none;
-  color: black;
-  background: linear-gradient(#5A798C, #8295a1);
+  color: white;
+  background: linear-gradient(#46736B, #012623);
   border-radius: 10px;
   font-weight: 400;
   transition: background 0.3s ease;
@@ -59,19 +60,23 @@ nav ul {
 
 
 nav a:hover {
-  background-color: #add3e6;
+  background: #46736B;
+}
+nav .active a {
+  background: #46736B;
+  color: #012623;
+  font-weight: 400;
+  border: 2px solid #46736B;
 }
 
-nav .active a {
-  background-color: #5A798C;
-}
+
 main h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: black;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 main p {
   font-size: 1.3rem;
@@ -99,9 +104,10 @@ figure img {
 
 figcaption {
   margin-top: 0.5rem;
-  font-weight: 300;
-  color: #465902;
-  font-style: italic;
+  font-weight: 400;
+  color: #012623;
+  font-size: 1.2rem;
+  
 }
 
 main h3 {
@@ -122,13 +128,185 @@ blockquote {
   max-width: 400px;
   color: black;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+
+div.gallery figure {
+  width: 75%;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+div.gallery figure:hover {
+  transform: scale(1.02);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 70%;
+  border-radius: 5%;
+}
+
+div.gallery figcaption {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #012623;
+  padding-top: 0.5rem;
+
+}
+/* packages styling */
+
+.package {
+  max-width: 90%;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.package-details h3 {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  color: #012623;
+}
+
+.package-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.package-flex figure {
+  margin: 0;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.package-flex img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.package-flex figcaption {
+  margin-top: 0.25rem;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #465902;
+}
+
+/* Text content on the right */
+.package-text {
+  flex: 1;
+}
+
+.package-text p {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: #333;
+}
+
+.package-text a {
+  color: #0460D9;
+  text-decoration: underline;
+}
+
+.video {
+    
+  margin: 1rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}  
+.myform fieldset {
+  border: 1px solid #810202;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.myform legend {
+  color: #810202;
+  font-size: 1rem;
+}
+
+.myform label,
+.myform select,
+.myform [type="text"],
+.myform [type="tel"],
+.myform textarea,
+.myform [type="email"] {
+  display: block;
+  margin: .5rem 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1rem;
+}
+
+.myform [type="text"],
+.myform [type="tel"],
+.myform select,
+.myform textarea,
+.myform [type="email"] {
+  border: solid 1px #888;
+  padding: .3rem;
+  width: 100%;
+  max-width: 250px;
+  border-radius: .3rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.myform textarea {
+  height: 6rem;
+}
+
+.myform :required {
+  background-color: #ecf4ec;
+}
+
+.myform [type="submit"] {
+  background-color: #5A00A1;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  display: block;
+  margin: 2rem auto 0 auto;
 }
 footer {
-  background-color: #F2C4B3;
+  background-color: #F2DFD8;
   color: black;
   text-align: center;
   padding: 1rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-top: 2rem;
 }
 
